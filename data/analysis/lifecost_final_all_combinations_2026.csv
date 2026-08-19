@@ -1,0 +1,37 @@
+City,University,Course,Available,Duration_Years,Annual_Tuition_AUD,Monthly_Rent_AUD,Monthly_Food_AUD,Monthly_Transport_AUD,Monthly_Utilities_AUD,Monthly_Living_AUD,Annual_Living_AUD,Total_Masters_Cost_AUD
+Melbourne,RMIT University,Master of Data Science,Yes,2.0,44160.0,1979.54,228.08,198.0,439.88,2845.5,34146.06,156612.12
+Melbourne,RMIT University,Master of Information Technology,Yes,2.0,,1979.54,228.08,198.0,439.88,2845.5,34146.06,
+Melbourne,RMIT University,Master of Business Administration,Yes,2.0,,1979.54,228.08,198.0,439.88,2845.5,34146.06,
+Melbourne,Deakin University,Master of Data Science,Yes,2.0,44200.0,1979.54,228.08,198.0,439.88,2845.5,34146.06,156692.12
+Melbourne,Deakin University,Master of Information Technology,Yes,2.0,44200.0,1979.54,228.08,198.0,439.88,2845.5,34146.06,156692.12
+Melbourne,Deakin University,Master of Business Administration,Yes,2.0,50400.0,1979.54,228.08,198.0,439.88,2845.5,34146.06,169092.12
+Melbourne,The University of Melbourne,Master of Data Science,Yes,2.0,57984.0,1979.54,228.08,198.0,439.88,2845.5,34146.06,184260.12
+Melbourne,The University of Melbourne,Master of Information Technology,Yes,2.0,,1979.54,228.08,198.0,439.88,2845.5,34146.06,
+Melbourne,The University of Melbourne,Master of Business Administration,Yes,2.0,56268.0,1979.54,228.08,198.0,439.88,2845.5,34146.06,180828.12
+Sydney,UNSW Sydney,Master of Data Science,No,,,2403.33,218.51,217.39,435.0,3274.23,39290.76,
+Sydney,UNSW Sydney,Master of Information Technology,Yes,2.0,63000.0,2403.33,218.51,217.39,435.0,3274.23,39290.76,204581.52
+Sydney,UNSW Sydney,Master of Business Administration,Yes,1.0,83500.0,2403.33,218.51,217.39,435.0,3274.23,39290.76,122790.76
+Sydney,Macquarie University,Master of Data Science,Yes,2.0,,2403.33,218.51,217.39,435.0,3274.23,39290.76,
+Sydney,Macquarie University,Master of Information Technology,Yes,2.0,,2403.33,218.51,217.39,435.0,3274.23,39290.76,
+Sydney,Macquarie University,Master of Business Administration,Yes,2.0,,2403.33,218.51,217.39,435.0,3274.23,39290.76,
+Brisbane,University of Queensland,Master of Data Science,Yes,2.0,60952.0,2018.44,205.26,30.0,381.76,2635.46,31625.52,185155.04
+Brisbane,University of Queensland,Master of Information Technology,Yes,2.0,58056.0,2018.44,205.26,30.0,381.76,2635.46,31625.52,179363.04
+Brisbane,University of Queensland,Master of Business Administration,Yes,1.5,69112.0,2018.44,205.26,30.0,381.76,2635.46,31625.52,151106.28
+Brisbane,Queensland University of Technology,Master of Data Science,Yes,,44200.0,2018.44,205.26,30.0,381.76,2635.46,31625.52,
+Brisbane,Queensland University of Technology,Master of Information Technology,Yes,,45000.0,2018.44,205.26,30.0,381.76,2635.46,31625.52,
+Brisbane,James Cook University,Master of Business Administration,Yes,1.5,33133.0,2018.44,205.26,30.0,381.76,2635.46,31625.52,97137.78
+Adelaide,Adelaide University,Master of Data Science,Yes,2.0,57100.0,1930.0,228.96,120.0,370.97,2649.94,31799.22,177798.44
+Adelaide,Adelaide University,Master of Information Technology,No,,,1930.0,228.96,120.0,370.97,2649.94,31799.22,
+Adelaide,Adelaide University,Master of Business Administration,Yes,1.5,54900.0,1930.0,228.96,120.0,370.97,2649.94,31799.22,130048.83
+Canberra,University of Canberra,Master of Data Science,Yes,2.0,42000.0,2111.82,233.14,132.8,382.42,2860.19,34322.22,152644.44
+Canberra,University of Canberra,Master of Information Technology,No,,,2111.82,233.14,132.8,382.42,2860.19,34322.22,
+Canberra,University of Canberra,Master of Business Administration,Yes,1.5,,2111.82,233.14,132.8,382.42,2860.19,34322.22,
+Perth,The University of Western Australia,Master of Data Science,Yes,2.0,52000.0,2272.0,208.44,140.0,422.62,3043.06,36516.66,177033.32
+Perth,The University of Western Australia,Master of Information Technology,Yes,2.0,,2272.0,208.44,140.0,422.62,3043.06,36516.66,
+Perth,The University of Western Australia,Master of Business Administration,Yes,1.5,,2272.0,208.44,140.0,422.62,3043.06,36516.66,
+Hobart,University of Tasmania,Master of Data Science,No,,,1970.0,208.75,140.0,447.7,2766.45,33197.4,
+Hobart,University of Tasmania,Master of Information Technology,No,,,1970.0,208.75,140.0,447.7,2766.45,33197.4,
+Hobart,University of Tasmania,Master of Business Administration,No,,,1970.0,208.75,140.0,447.7,2766.45,33197.4,
+Darwin,Charles Darwin University,Master of Data Science,Yes,2.0,36809.0,2426.67,194.19,69.69,446.89,3137.44,37649.28,148916.56
+Darwin,Charles Darwin University,Master of Information Technology,No,,,2426.67,194.19,69.69,446.89,3137.44,37649.28,
+Darwin,Charles Darwin University,Master of Business Administration,Yes,1.5,38560.0,2426.67,194.19,69.69,446.89,3137.44,37649.28,114313.92

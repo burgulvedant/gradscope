@@ -1,0 +1,69 @@
+city,university,course,duration_min_years,duration_max_years,annual_tuition_aud,scholarship_percent,remaining_tuition_min_aud,remaining_tuition_max_aud,monthly_living_cost_aud,living_cost_min_aud,living_cost_max_aud,total_cost_min_aud,total_cost_max_aud,tuition_available
+Melbourne,RMIT University,Master of Data Science,2.0,2.0,44160.0,0,88320.0,88320.0,2636.67,63280.08,63280.08,151600.08,151600.08,True
+Melbourne,The University of Melbourne,Master of Data Science,2.0,2.0,57984.0,0,115968.0,115968.0,2636.67,63280.08,63280.08,179248.08,179248.08,True
+Melbourne,Monash University,Master of Data Science,2.0,2.0,52900.0,0,105800.0,105800.0,2636.67,63280.08,63280.08,169080.08,169080.08,True
+Melbourne,La Trobe University,Master of Data Science,2.0,2.0,43800.0,0,87600.0,87600.0,2636.67,63280.08,63280.08,150880.08,150880.08,True
+Melbourne,Swinburne University of Technology,Master of Data Science,2.0,2.0,45010.0,0,90020.0,90020.0,2636.67,63280.08,63280.08,153300.08,153300.08,True
+Melbourne,Federation University Australia,Master of Data Science,2.0,2.0,41400.0,0,82800.0,82800.0,2636.67,63280.08,63280.08,146080.08,146080.08,True
+Melbourne,RMIT University,Master of Information Technology,2.0,2.0,44160.0,0,88320.0,88320.0,2636.67,63280.08,63280.08,151600.08,151600.08,True
+Melbourne,Deakin University,Master of Information Technology,2.0,2.0,44200.0,0,88400.0,88400.0,2636.67,63280.08,63280.08,151680.08,151680.08,True
+Melbourne,Monash University,Master of Information Technology,2.0,2.0,,0,,,2636.67,63280.08,63280.08,,,False
+Melbourne,La Trobe University,Master of Information Technology,1.5,2.0,,0,,,2636.67,47460.06,63280.08,,,False
+Melbourne,Swinburne University of Technology,Master of Information Technology,2.0,2.0,43930.0,0,87860.0,87860.0,2636.67,63280.08,63280.08,151140.08,151140.08,True
+Melbourne,The University of Melbourne,Master of Information Technology,2.0,2.0,64000.0,0,128000.0,128000.0,2636.67,63280.08,63280.08,191280.08,191280.08,True
+Melbourne,Southern Cross University,Master of Information Technology,2.0,2.0,26000.0,0,52000.0,52000.0,2636.67,63280.08,63280.08,115280.08,115280.08,True
+Melbourne,RMIT University,Master of Business Administration,2.0,2.0,50880.0,0,101760.0,101760.0,2636.67,63280.08,63280.08,165040.08,165040.08,True
+Melbourne,The University of Melbourne,Master of Business Administration,2.0,2.0,56268.0,0,112536.0,112536.0,2636.67,63280.08,63280.08,175816.08,175816.08,True
+Melbourne,Swinburne University of Technology,Master of Business Administration,2.0,2.0,48420.0,0,96840.0,96840.0,2636.67,63280.08,63280.08,160120.08,160120.08,True
+Melbourne,Australian Catholic University,Master of Business Administration,2.0,2.0,38096.0,0,76192.0,76192.0,2636.67,63280.08,63280.08,139472.08,139472.08,True
+Melbourne,Southern Cross University,Master of Business Administration,2.0,2.0,26000.0,0,52000.0,52000.0,2636.67,63280.08,63280.08,115280.08,115280.08,True
+Sydney,Macquarie University,Master of Data Science,2.0,2.0,46300.0,0,92600.0,92600.0,3071.09,73706.16,73706.16,166306.16,166306.16,True
+Sydney,Western Sydney University,Master of Data Science,2.0,2.0,41219.0,0,82438.0,82438.0,3071.09,73706.16,73706.16,156144.16,156144.16,True
+Sydney,UNSW Sydney,Master of Information Technology,2.0,2.0,63000.0,0,126000.0,126000.0,3071.09,73706.16,73706.16,199706.16,199706.16,True
+Sydney,University of Technology Sydney (UTS),Master of Information Technology,2.0,2.0,,0,,,3071.09,73706.16,73706.16,,,False
+Sydney,Macquarie University,Master of Information Technology,2.0,2.0,47623.0,0,95246.0,95246.0,3071.09,73706.16,73706.16,168952.16,168952.16,True
+Sydney,Australian Catholic University,Master of Information Technology,2.0,2.0,,0,,,3071.09,73706.16,73706.16,,,False
+Sydney,University of Newcastle,Master of Information Technology,2.0,2.0,47600.0,0,95200.0,95200.0,3071.09,73706.16,73706.16,168906.16,168906.16,True
+Sydney,Southern Cross University,Master of Information Technology,2.0,2.0,26000.0,0,52000.0,52000.0,3071.09,73706.16,73706.16,125706.16,125706.16,True
+Sydney,UNSW Sydney (AGSM),Master of Business Administration,1.0,1.0,83500.0,0,83500.0,83500.0,3071.09,36853.08,36853.08,120353.08,120353.08,True
+Sydney,Macquarie University,Master of Business Administration,2.0,2.0,46500.0,0,93000.0,93000.0,3071.09,73706.16,73706.16,166706.16,166706.16,True
+Sydney,Western Sydney University,Master of Business Administration,2.0,2.0,39337.0,0,78674.0,78674.0,3071.09,73706.16,73706.16,152380.16,152380.16,True
+Sydney,University of Technology Sydney (UTS),Master of Business Administration,2.0,2.0,,0,,,3071.09,73706.16,73706.16,,,False
+Sydney,Australian Catholic University,Master of Business Administration,2.0,2.0,,0,,,3071.09,73706.16,73706.16,,,False
+Sydney,University of Wollongong,Master of Business Administration,1.5,1.5,,0,,,3071.09,55279.62,55279.62,,,False
+Sydney,University of Newcastle,Master of Business Administration,1.5,1.5,,0,,,3071.09,55279.62,55279.62,,,False
+Sydney,Southern Cross University,Master of Business Administration,2.0,2.0,26000.0,0,52000.0,52000.0,3071.09,73706.16,73706.16,125706.16,125706.16,True
+Brisbane,University of Queensland,Master of Data Science,1.5,2.0,60952.0,0,91428.0,121904.0,2420.99,43577.82,58103.76,135005.82,180007.76,True
+Brisbane,Queensland University of Technology,Master of Data Science,2.0,2.0,44200.0,0,88400.0,88400.0,2420.99,58103.76,58103.76,146503.76,146503.76,True
+Brisbane,Griffith University,Master of Data Science,1.0,2.0,,0,,,2420.99,29051.88,58103.76,,,False
+Brisbane,University of Queensland,Master of Information Technology,2.0,2.0,58056.0,0,116112.0,116112.0,2420.99,58103.76,58103.76,174215.76,174215.76,True
+Brisbane,Queensland University of Technology,Master of Information Technology,2.0,2.0,45000.0,0,90000.0,90000.0,2420.99,58103.76,58103.76,148103.76,148103.76,True
+Brisbane,Griffith University,Master of Information Technology,1.5,2.0,,0,,,2420.99,43577.82,58103.76,,,False
+Brisbane,James Cook University,Master of Information Technology,2.0,2.0,32168.0,0,64336.0,64336.0,2420.99,58103.76,58103.76,122439.76,122439.76,True
+Brisbane,CQUniversity,Master of Information Technology,2.0,2.0,39840.0,0,79680.0,79680.0,2420.99,58103.76,58103.76,137783.76,137783.76,True
+Brisbane,Southern Cross University,Master of Information Technology,2.0,2.0,26000.0,0,52000.0,52000.0,2420.99,58103.76,58103.76,110103.76,110103.76,True
+Brisbane,University of Queensland,Master of Business Administration,1.5,1.5,69112.0,0,103668.0,103668.0,2420.99,43577.82,43577.82,147245.82,147245.82,True
+Brisbane,Griffith University,Master of Business Administration,1.0,1.5,,0,,,2420.99,29051.88,43577.82,,,False
+Brisbane,James Cook University,Master of Business Administration,1.5,1.5,33133.0,0,49699.5,49699.5,2420.99,43577.82,43577.82,93277.32,93277.32,True
+Brisbane,Southern Cross University,Master of Business Administration,2.0,2.0,26000.0,0,52000.0,52000.0,2420.99,58103.76,58103.76,110103.76,110103.76,True
+Adelaide,Adelaide University,Master of Data Science,2.0,2.0,57100.0,0,114200.0,114200.0,2443.99,58655.76,58655.76,172855.76,172855.76,True
+Adelaide,Flinders University,Master of Data Science,1.0,2.0,42900.0,0,42900.0,85800.0,2443.99,29327.88,58655.76,72227.88,144455.76,True
+Adelaide,Flinders University,Master of Information Technology,2.0,2.0,42900.0,0,85800.0,85800.0,2443.99,58655.76,58655.76,144455.76,144455.76,True
+Perth,The University of Western Australia,Master of Data Science,1.5,2.0,50700.0,0,76050.0,101400.0,2825.61,50860.98,67814.64,126910.98,169214.64,True
+Perth,Edith Cowan University,Master of Data Science,2.0,2.0,42400.0,0,84800.0,84800.0,2825.61,67814.64,67814.64,152614.64,152614.64,True
+Perth,The University of Western Australia,Master of Information Technology,1.5,2.0,50700.0,0,76050.0,101400.0,2825.61,50860.98,67814.64,126910.98,169214.64,True
+Perth,Murdoch University,Master of Information Technology,2.0,2.0,36730.0,0,73460.0,73460.0,2825.61,67814.64,67814.64,141274.64,141274.64,True
+Perth,The University of Western Australia,Master of Business Administration,16.0,16.0,38000.0,0,608000.0,608000.0,2825.61,542517.12,542517.12,1150517.12,1150517.12,True
+Perth,Curtin University,Master of Business Administration,1.5,1.5,42366.0,0,63549.0,63549.0,2825.61,50860.98,50860.98,114409.98,114409.98,True
+Perth,Murdoch University,Master of Business Administration,1.0,1.0,58410.0,0,58410.0,58410.0,2825.61,33907.32,33907.32,92317.32,92317.32,True
+Perth,Edith Cowan University,Master of Business Administration,2.0,2.0,40650.0,0,81300.0,81300.0,2825.61,67814.64,67814.64,149114.64,149114.64,True
+Perth,University of Notre Dame Australia,Master of Business Administration,2.0,2.0,34356.0,0,68712.0,68712.0,2825.61,67814.64,67814.64,136526.64,136526.64,True
+Canberra,University of Canberra,Master of Data Science,2.0,2.0,42000.0,0,84000.0,84000.0,2647.37,63536.88,63536.88,147536.88,147536.88,True
+Canberra,University of Canberra,Master of Business Administration,1.5,1.5,41500.0,0,62250.0,62250.0,2647.37,47652.66,47652.66,109902.66,109902.66,True
+Darwin,Charles Darwin University,Master of Data Science,2.0,2.0,36440.0,0,72880.0,72880.0,2922.6,70142.4,70142.4,143022.4,143022.4,True
+Darwin,Charles Darwin University,Master of Business Administration,1.5,1.5,38192.0,0,57288.0,57288.0,2922.6,52606.8,52606.8,109894.8,109894.8,True
+Gold Coast,Griffith University,Master of Data Science,2.0,2.0,,0,,,2644.19,63460.56,63460.56,,,False
+Gold Coast,Griffith University,Master of Information Technology,1.5,2.0,,0,,,2644.19,47595.42,63460.56,,,False
+Gold Coast,Southern Cross University,Master of Information Technology,2.0,2.0,26000.0,0,52000.0,52000.0,2644.19,63460.56,63460.56,115460.56,115460.56,True
+Gold Coast,Bond University,Master of Business Administration,16.0,16.0,81430.0,0,1302880.0,1302880.0,2644.19,507684.48,507684.48,1810564.48,1810564.48,True
+Gold Coast,Southern Cross University,Master of Business Administration,2.0,2.0,26000.0,0,52000.0,52000.0,2644.19,63460.56,63460.56,115460.56,115460.56,True

@@ -1,0 +1,37 @@
+city,university,course,available,duration_years,annual_tuition_fee_aud,fee_year,delivery,campus,notes
+Melbourne,RMIT University,Master of Data Science,Yes,2.0,44160.0,2026,On campus,Melbourne City,Official course page; international annual fee
+Melbourne,RMIT University,Master of Information Technology,Yes,2.0,,2026,On campus,Melbourne City,Course confirmed for 2026; 2026 international fee not exposed on current official page
+Melbourne,RMIT University,Master of Business Administration,Yes,2.0,,2026,On campus,Melbourne City,"Course confirmed; current official page exposes 2027 international fee, not a 2026 on-campus international fee"
+Melbourne,Deakin University,Master of Data Science,Yes,2.0,44200.0,2026,On campus,Burwood,Official international course page
+Melbourne,Deakin University,Master of Information Technology,Yes,2.0,44200.0,2026,On campus,Burwood,Official international course page
+Melbourne,Deakin University,Master of Business Administration,Yes,2.0,50400.0,2026,On campus,Burwood,Official international title is Master of Business Administration (International); standardized here to locked LifeCost course
+Melbourne,The University of Melbourne,Master of Data Science,Yes,2.0,57984.0,2026,On campus,Parkville,2026 international fee per EFTSL
+Melbourne,The University of Melbourne,Master of Information Technology,Yes,2.0,,2026,On campus,Parkville,Course confirmed for 2026; exact 2026 international fee not captured in the verified source set
+Melbourne,The University of Melbourne,Master of Business Administration,Yes,2.0,56268.0,2026,On campus,Parkville,"Derived from official 2026 indicative total course fee A$112,536 / 2 years"
+Sydney,UNSW Sydney,Master of Data Science,No,,,2026,On campus,Kensington,"UNSW offers Master of Data Science and Decisions, not the locked exact course name"
+Sydney,UNSW Sydney,Master of Information Technology,Yes,2.0,63000.0,2026,On campus,Kensington,Official 2026 indicative first-year international full fee
+Sydney,UNSW Sydney,Master of Business Administration,Yes,1.0,83500.0,2026,On campus,Kensington,AGSM full-time MBA; official 2026 international fee
+Sydney,Macquarie University,Master of Data Science,Yes,2.0,,2026,On campus,North Ryde,Exact course confirmed; 2026 international fee not captured in verified source set
+Sydney,Macquarie University,Master of Information Technology,Yes,2.0,,2026,On campus,North Ryde,Exact course confirmed; 2026 international fee not captured in verified source set
+Sydney,Macquarie University,Master of Business Administration,Yes,2.0,,2026,On campus,North Ryde,Exact course confirmed; 2026 international fee not captured in verified source set
+Brisbane,University of Queensland,Master of Data Science,Yes,2.0,60952.0,2026,On campus,Brisbane,Official 2026 international annual fee; course can also be 1.5 years depending on pathway
+Brisbane,University of Queensland,Master of Information Technology,Yes,2.0,58056.0,2026,On campus,Brisbane,Official 2026 international annual fee
+Brisbane,University of Queensland,Master of Business Administration,Yes,1.5,69112.0,2026,On campus,Brisbane,Official 2026 international annual fee
+Brisbane,Queensland University of Technology,Master of Data Science,Yes,,44200.0,2026,On campus,Brisbane,Official 2026 international fee; duration not captured in verified source set
+Brisbane,Queensland University of Technology,Master of Information Technology,Yes,,45000.0,2026,On campus,Brisbane,Official 2026 international fee; duration not captured in verified source set
+Brisbane,James Cook University,Master of Business Administration,Yes,1.5,33133.0,2026,On campus,Brisbane,Official 2026 estimated annual international tuition
+Adelaide,Adelaide University,Master of Data Science,Yes,2.0,57100.0,2026,On campus,Adelaide City / Mawson Lakes,Official 2026 international annual fee
+Adelaide,Adelaide University,Master of Information Technology,No,,,2026,On campus,Adelaide,"Exact locked course name not found; Adelaide University offers named MIT specialisations such as Applied AI, Cyber Security, Enterprise Management and Computing & Innovation"
+Adelaide,Adelaide University,Master of Business Administration,Yes,1.5,54900.0,2026,On campus,Adelaide City,Official 2026 international annual fee
+Canberra,University of Canberra,Master of Data Science,Yes,2.0,42000.0,2026,On campus,Bruce,"Official international course guide: 2026 annual fee A$42,000"
+Canberra,University of Canberra,Master of Information Technology,No,,,2026,On campus,Bruce,"UC's 2026 exact offering is Master of Information Technology and Systems, not the locked exact course name"
+Canberra,University of Canberra,Master of Business Administration,Yes,1.5,,2026,On campus,Bruce,Exact course confirmed for international admissions; 2026 international fee not captured in verified source set
+Perth,The University of Western Australia,Master of Data Science,Yes,2.0,52000.0,2026,On campus,Perth,Official 2026 international annual fee
+Perth,The University of Western Australia,Master of Information Technology,Yes,2.0,,2026,On campus,Perth,Exact course confirmed and available to international students; fee calculator value not captured in verified source set
+Perth,The University of Western Australia,Master of Business Administration,Yes,1.5,,2026,On campus,Perth,Exact MBA confirmed; fee calculator value not captured in verified source set
+Hobart,University of Tasmania,Master of Data Science,No,,,2026,On campus,Hobart,No exact Master of Data Science verified in the 2026 international course guide
+Hobart,University of Tasmania,Master of Information Technology,No,,,2026,On campus,Hobart,"Exact offering is Master of Information Technology and Systems, not the locked exact course name"
+Hobart,University of Tasmania,Master of Business Administration,No,,,2026,On campus,Hobart,"Exact offering is Master of Business Administration (Global), not the locked exact course name"
+Darwin,Charles Darwin University,Master of Data Science,Yes,2.0,36809.0,2026,On campus,Darwin / Danala ECP,2026 international fee verified from course listing
+Darwin,Charles Darwin University,Master of Information Technology,No,,,2026,On campus,Darwin,"CDU's 2026 IT offerings are named specialisations (AI, Software Engineering, Information Systems, Cyber Security), not the locked exact course"
+Darwin,Charles Darwin University,Master of Business Administration,Yes,1.5,38560.0,2026,On campus,Darwin / Danala ECP,2026 international fee verified from course listing

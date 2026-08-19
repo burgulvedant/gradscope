@@ -1,0 +1,19 @@
+city,university,course,duration_years,annual_tuition_fee_aud,monthly_rent_cost,monthly_food_cost,monthly_transport_cost,monthly_utilities_cost,total_monthly_living_cost,annual_living_cost,annual_total_cost,estimated_total_masters_cost
+Melbourne,RMIT University,Master of Data Science,2.0,44160.0,1979.54,228.08,198.0,439.88,2845.5,34146.0,78306.0,156612.0
+Melbourne,Deakin University,Master of Data Science,2.0,44200.0,1979.54,228.08,198.0,439.88,2845.5,34146.0,78346.0,156692.0
+Melbourne,Deakin University,Master of Information Technology,2.0,44200.0,1979.54,228.08,198.0,439.88,2845.5,34146.0,78346.0,156692.0
+Melbourne,Deakin University,Master of Business Administration,2.0,50400.0,1979.54,228.08,198.0,439.88,2845.5,34146.0,84546.0,169092.0
+Melbourne,The University of Melbourne,Master of Data Science,2.0,57984.0,1979.54,228.08,198.0,439.88,2845.5,34146.0,92130.0,184260.0
+Melbourne,The University of Melbourne,Master of Business Administration,2.0,56268.0,1979.54,228.08,198.0,439.88,2845.5,34146.0,90414.0,180828.0
+Sydney,UNSW Sydney,Master of Information Technology,2.0,63000.0,2403.33,218.51,217.39,435.0,3274.23,39290.76,102290.76,204581.52
+Sydney,UNSW Sydney,Master of Business Administration,1.0,83500.0,2403.33,218.51,217.39,435.0,3274.23,39290.76,122790.76,122790.76
+Brisbane,University of Queensland,Master of Data Science,2.0,60952.0,2018.44,205.26,30.0,381.76,2635.46,31625.52,92577.52,185155.04
+Brisbane,University of Queensland,Master of Information Technology,2.0,58056.0,2018.44,205.26,30.0,381.76,2635.46,31625.52,89681.52,179363.04
+Brisbane,University of Queensland,Master of Business Administration,1.5,69112.0,2018.44,205.26,30.0,381.76,2635.46,31625.52,100737.52,151106.28
+Brisbane,James Cook University,Master of Business Administration,1.5,33133.0,2018.44,205.26,30.0,381.76,2635.46,31625.52,64758.52,97137.78
+Adelaide,Adelaide University,Master of Data Science,2.0,57100.0,1930.0,228.96,120.0,370.97,2649.93,31799.16,88899.16,177798.32
+Adelaide,Adelaide University,Master of Business Administration,1.5,54900.0,1930.0,228.96,120.0,370.97,2649.93,31799.16,86699.16,130048.74
+Canberra,University of Canberra,Master of Data Science,2.0,42000.0,2111.82,233.14,132.8,382.42,2860.18,34322.16,76322.16,152644.32
+Perth,The University of Western Australia,Master of Data Science,2.0,52000.0,2272.0,208.44,140.0,422.62,3043.06,36516.72,88516.72,177033.44
+Darwin,Charles Darwin University,Master of Data Science,2.0,36809.0,2426.67,194.19,69.69,446.89,3137.44,37649.28,74458.28,148916.56
+Darwin,Charles Darwin University,Master of Business Administration,1.5,38560.0,2426.67,194.19,69.69,446.89,3137.44,37649.28,76209.28,114313.92

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg-light-warm: #FFFFFF;
+  --color-surface-white: #FFFFFF;
+  --color-surface-light-grey: #F3F4F6;
+  --color-border-subtle: #E5E7EB;
+  
+  --color-text-charcoal: #1F2937;
+  --color-text-grey-medium: #4B5563;
+  
+  --color-brand-teal: #0D9488;
+  --color-brand-teal-light: #CCFBF1;
+  --color-brand-teal-dark: #0F766E;
+
+  --font-sans: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--color-bg-light-warm);
+    color: var(--color-text-charcoal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--color-bg-light-warm);
+    color: var(--color-text-charcoal);
+  }
+
+  /* Custom scrollbar for premium look */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FFFFFF;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #E5E7EB;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0D9488;
+  }
+}
+
+/* Scroll reveal helper classes */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Premium glow overlay for cards */
+.premium-glow {
+  position: relative;
+}
+
+.premium-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(135deg, rgba(13, 148, 136, 0.05) 0%, rgba(13, 148, 136, 0) 50%, rgba(13, 148, 136, 0.02) 100%);
+  border-radius: inherit;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Animations for morphing words */
+@keyframes word-morph {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  5%, 25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.animate-word-morph {
+  animation: word-morph 12s infinite;
+}
+
+/* Prefers reduced motion overrides */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+  .scroll-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
