@@ -161,7 +161,7 @@ useEffect(() => {
   };
 
   return (
-    <div className="min-h-screen pt-32 pb-24 px-6 bg-bg-light-warm flex items-center justify-center">
+    <div className="min-h-screen pt-32 pb-24 px-6 bg-bg-light-warm flex items-center justify-center relative overflow-hidden">
       {/* Background radial glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-brand-teal/5 blur-[120px] rounded-full pointer-events-none" />
       
