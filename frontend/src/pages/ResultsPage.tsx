@@ -118,8 +118,21 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({
   };
 
   const durationMin = result.durationMinYears || 0;
+  const durationMax = result.durationMaxYears || durationMin;
   const tuitionTotal = result.remainingTuitionMin || 0;
   const livingTotal = result.livingCostMin;
+
+  const hasTuition = result.annualTuition !== null;
+  const tuitionBeforeMin = hasTuition ? result.annualTuition! * durationMin : null;
+  const tuitionBeforeMax = hasTuition ? result.annualTuition! * durationMax : null;
+  const scholarshipSavingsMin = hasTuition && result.remainingTuitionMin !== null ? tuitionBeforeMin! - result.remainingTuitionMin : 0;
+  const scholarshipSavingsMax = hasTuition && result.remainingTuitionMax !== null ? tuitionBeforeMax! - result.remainingTuitionMax : 0;
+  const tuitionAfterMin = hasTuition ? result.remainingTuitionMin : null;
+  const tuitionAfterMax = hasTuition ? result.remainingTuitionMax : null;
+  const totalWithoutScholarshipMin = hasTuition ? tuitionBeforeMin! + result.livingCostMin : result.livingCostMin;
+  const totalWithoutScholarshipMax = hasTuition ? tuitionBeforeMax! + result.livingCostMax : result.livingCostMax;
+  const totalWithScholarshipMin = result.totalCostMin;
+  const totalWithScholarshipMax = result.totalCostMax;
   
   // Pie chart data
   const pieData = result.annualTuition ? [
@@ -249,6 +262,80 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({
             </div>
             <span className="text-sm text-text-grey-medium mt-1 block font-medium">Aggregated baseline over 12 months</span>
           </div>
+        </div>
+
+        {/* Cost Breakdown Detail Card: Where Your Total Comes From */}
+        <div className="bg-surface-white border border-border-subtle p-6 sm:p-8 rounded-2xl shadow-sm text-left mb-12">
+          <div className="mb-6 border-b border-border-subtle pb-4">
+            <h2 className="text-xl font-bold text-text-charcoal">Where Your Total Comes From</h2>
+            <p className="text-sm text-text-grey-medium mt-1">
+              See how tuition, scholarship savings, and living costs contribute to your estimated master's cost.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Column 1: Without Scholarship */}
+            <div className="p-6 bg-surface-light-grey/40 rounded-xl border border-border-subtle/50">
+              <h3 className="text-xs font-bold uppercase text-text-grey-medium tracking-wider mb-4">Without Scholarship</h3>
+              <div className="space-y-3.5">
+                <div className="flex justify-between items-center text-sm">
+                  <span className="text-text-grey-medium">Tuition before scholarship</span>
+                  <span className="font-semibold text-text-charcoal">{formatRange(tuitionBeforeMin, tuitionBeforeMax)}</span>
+                </div>
+                <div className="flex justify-between items-center text-sm">
+                  <span className="text-text-grey-medium">Living costs</span>
+                  <span className="font-semibold text-text-charcoal">{formatRange(result.livingCostMin, result.livingCostMax)}</span>
+                </div>
+                <div className="border-t border-border-subtle/60 pt-3 mt-3 flex justify-between items-center text-base font-bold text-text-charcoal">
+                  <span>Total Estimated Cost</span>
+                  <span>{formatRange(totalWithoutScholarshipMin, totalWithoutScholarshipMax)}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Column 2: With Scholarship */}
+            <div className="p-6 bg-brand-teal-light/10 rounded-xl border border-brand-teal/20 relative">
+              <div className="absolute top-4 right-4 bg-brand-teal/10 text-brand-teal text-[10px] font-bold uppercase px-2 py-0.5 rounded-full">
+                Active Plan
+              </div>
+              <h3 className="text-xs font-bold uppercase text-brand-teal-dark tracking-wider mb-4">With Scholarship</h3>
+              <div className="space-y-3.5">
+                <div className="flex justify-between items-center text-sm">
+                  <span className="text-text-grey-medium">Tuition before scholarship</span>
+                  <span className="font-semibold text-text-charcoal">{formatRange(tuitionBeforeMin, tuitionBeforeMax)}</span>
+                </div>
+                
+                {hasTuition && result.scholarshipPercent > 0 && (
+                  <div className="flex justify-between items-center text-sm text-brand-teal-dark font-medium">
+                    <span>Scholarship savings ({result.scholarshipPercent}%)</span>
+                    <span>&minus;{formatRange(scholarshipSavingsMin, scholarshipSavingsMax)}</span>
+                  </div>
+                )}
+
+                {hasTuition && (
+                  <div className="flex justify-between items-center text-sm">
+                    <span className="text-text-grey-medium">Tuition after scholarship</span>
+                    <span className="font-semibold text-text-charcoal">{formatRange(tuitionAfterMin, tuitionAfterMax)}</span>
+                  </div>
+                )}
+
+                <div className="flex justify-between items-center text-sm">
+                  <span className="text-text-grey-medium">Living costs</span>
+                  <span className="font-semibold text-text-charcoal">{formatRange(result.livingCostMin, result.livingCostMax)}</span>
+                </div>
+                <div className="border-t border-brand-teal/20 pt-3 mt-3 flex justify-between items-center text-base font-black text-brand-teal-dark">
+                  <span>Total Estimated Cost</span>
+                  <span className="text-lg">{formatRange(totalWithScholarshipMin, totalWithScholarshipMax)}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {hasTuition && result.scholarshipPercent > 0 && (
+            <div className="mt-6 p-4 bg-brand-teal-light/30 border border-brand-teal/20 rounded-xl text-brand-teal-dark font-bold text-[15px] sm:text-base text-center">
+              Your scholarship saves you <span className="text-brand-teal-dark font-black">{formatRange(scholarshipSavingsMin, scholarshipSavingsMax)}</span> over the program.
+            </div>
+          )}
         </div>
 
         {/* Visualizations Grid */}
