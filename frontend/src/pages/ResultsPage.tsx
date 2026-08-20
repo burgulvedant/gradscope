@@ -186,7 +186,7 @@ export const ResultsPage: React.FC<ResultsPageProps> = ({
           </div>
 
           {/* Hero Combined Cost */}
-          <div className="bg-surface-white border border-border-subtle p-6 rounded-2xl w-full lg:w-auto min-w-[280px] shadow-sm relative overflow-hidden">
+          <div className="bg-surface-white border border-border-subtle p-6 rounded-2xl w-full lg:w-auto min-w-[240px] sm:min-w-[280px] shadow-sm relative overflow-hidden">
             <div className="absolute top-0 right-0 p-3 text-brand-teal/5">
               <Building2 className="w-20 h-20" />
             </div>

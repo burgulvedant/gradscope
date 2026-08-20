@@ -45,7 +45,7 @@ export const Hero: React.FC<HeroProps> = ({ onCalculateClick, onExploreClick }) 
       <h1 className="font-sans text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-[1.1] max-w-4xl mb-6 text-text-charcoal select-none">
         <span className="inline-flex items-baseline justify-center gap-[0.2em] flex-wrap">
           <span>KNOW</span>
-          <span className="inline-flex items-baseline h-[1.2em] min-w-[280px] sm:min-w-[450px] text-left overflow-hidden relative">
+          <span className="inline-flex items-baseline h-[1.2em] min-w-[240px] sm:min-w-[450px] text-left overflow-hidden relative">
             {shouldReduceMotion ? (
               <span className="text-brand-teal">THE REAL COST</span>
             ) : (
