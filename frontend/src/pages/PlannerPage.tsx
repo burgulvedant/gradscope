@@ -11,6 +11,8 @@ interface PlannerPageProps {
 export const PlannerPage: React.FC<PlannerPageProps> = ({ onCalculate, onBackToHome }) => {
   const [availableCourses, setAvailableCourses] = useState<string[]>([]);
   const [selectedCourse, setSelectedCourse] = useState<string>('');
+  const [initialLoading, setInitialLoading] = useState<boolean>(true);
+  const [initialError, setInitialError] = useState<boolean>(false);
   
   const [cities, setCities] = useState<string[]>([]);
   const [selectedCity, setSelectedCity] = useState<string>('');
@@ -67,20 +69,25 @@ export const PlannerPage: React.FC<PlannerPageProps> = ({ onCalculate, onBackToH
     }
   }, [scholarship, scholarshipInteracted]);
 
-// Load available courses from the backend database
-useEffect(() => {
   const loadCourses = async () => {
+    setInitialLoading(true);
+    setInitialError(false);
     try {
       const courses = await getCourses();
       setAvailableCourses(courses);
+      setInitialLoading(false);
     } catch (error) {
       console.error('Failed to load courses:', error);
       setAvailableCourses([]);
+      setInitialError(true);
+      setInitialLoading(false);
     }
   };
 
-  loadCourses();
-}, []);
+  // Load available courses from the backend database
+  useEffect(() => {
+    loadCourses();
+  }, []);
 
 // Load cities from the backend when course changes
 useEffect(() => {
@@ -288,27 +295,51 @@ useEffect(() => {
               <h3 className="text-lg sm:text-xl font-bold text-text-charcoal">Step 01: What do you want to study?</h3>
             </div>
 
-            <div className="grid grid-cols-1 gap-4">
-              {availableCourses.map((course) => {
-                const isSelected = selectedCourse === course;
-                return (
-                  <button
-                    key={course}
-                    onClick={() => {
-                      setSelectedCourse(course);
-                    }}
-                    className={`p-4 rounded-xl border text-left font-bold text-[15px] sm:text-base transition-all cursor-pointer flex justify-between items-center ${
-                      isSelected
-                        ? 'bg-brand-teal border-brand-teal text-surface-white shadow-md'
-                        : 'bg-surface-white border-border-subtle text-text-grey-medium hover:text-text-charcoal hover:border-brand-teal/30 shadow-sm'
-                    }`}
-                  >
-                    <span>{course}</span>
-                    {isSelected && <CheckCircle2 className="w-5 h-5 text-surface-white" />}
-                  </button>
-                );
-              })}
-            </div>
+            {initialLoading ? (
+              <div className="flex flex-col items-center justify-center py-10 px-4 text-center">
+                <Book className="w-8 h-8 text-brand-teal mb-3 animate-pulse" />
+                <h4 className="text-[15px] sm:text-base font-bold text-text-charcoal">Preparing GradScope...</h4>
+                <p className="text-xs text-text-grey-medium mt-1.5 max-w-xs leading-relaxed">
+                  Connecting to production server & loading available courses. Render instances may take up to 50 seconds to spin up from standby.
+                </p>
+              </div>
+            ) : initialError ? (
+              <div className="flex flex-col items-center justify-center py-8 px-4 text-center">
+                <AlertCircle className="w-10 h-10 text-brand-teal mb-3" />
+                <h4 className="text-[15px] sm:text-base font-bold text-text-charcoal">Connection Delay</h4>
+                <p className="text-xs text-text-grey-medium mt-1.5 mb-5 max-w-xs leading-relaxed">
+                  GradScope is taking longer than expected to connect. The database server may be spinning up.
+                </p>
+                <button
+                  onClick={loadCourses}
+                  className="px-6 py-2.5 bg-brand-teal text-surface-white text-xs sm:text-sm font-semibold rounded-full hover:bg-brand-teal-dark hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer shadow-sm focus:outline-none"
+                >
+                  Try Again
+                </button>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 gap-4">
+                {availableCourses.map((course) => {
+                  const isSelected = selectedCourse === course;
+                  return (
+                    <button
+                      key={course}
+                      onClick={() => {
+                        setSelectedCourse(course);
+                      }}
+                      className={`p-4 rounded-xl border text-left font-bold text-[15px] sm:text-base transition-all cursor-pointer flex justify-between items-center ${
+                        isSelected
+                          ? 'bg-brand-teal border-brand-teal text-surface-white shadow-md'
+                          : 'bg-surface-white border-border-subtle text-text-grey-medium hover:text-text-charcoal hover:border-brand-teal/30 shadow-sm'
+                      }`}
+                    >
+                      <span>{course}</span>
+                      {isSelected && <CheckCircle2 className="w-5 h-5 text-surface-white" />}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
           {/* STEP 2: CITY SELECTION */}
